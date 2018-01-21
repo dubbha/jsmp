@@ -1,0 +1,30 @@
+<h3>Info [{{user.username}}]</h3>
+
+<form class="login__form" autoComplete="off" (ngSubmit)="update()">
+  <div class="login__block"> First Name:
+    <input
+      class="login__input"
+      type="text"
+      name="firstName"
+      [(ngModel)]="user.firstName" />
+  </div>
+  <div class="login__block"> Last Name:
+    <input
+      class="login__input"
+      type="text"
+      name="lastName"
+      [(ngModel)]="user.lastName" />
+  </div>
+  <div class="login__block"> Birth Date:
+    <input
+      class="login__input"
+      type="number"
+      min="1900"
+      max="2017"
+      name="birthYear"
+      [(ngModel)]="user.birthYear" />
+  </div>
+  <button
+    type="submit"
+    class="login__button login__button-submit"> Update Info </button>
+</form>

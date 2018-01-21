@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroesHero should render hero element in the heroes list 1`] = `
+<li
+  className="block__element_modifier"
+  onClick={[Function]}
+>
+  <span
+    className="badge"
+  >
+    777
+  </span>
+   
+  Zero
+</li>
+`;

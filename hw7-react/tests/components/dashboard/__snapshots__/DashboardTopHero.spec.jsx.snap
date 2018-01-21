@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardTopHero should render dashboard top hero element 1`] = `
+<Link
+  className="col-1-4"
+  replace={false}
+  to="/hero-details/666"
+>
+  <div
+    className="module hero"
+  >
+    <h4>
+      Jesus
+    </h4>
+  </div>
+</Link>
+`;

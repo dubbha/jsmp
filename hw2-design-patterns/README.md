@@ -1,0 +1,5 @@
+- [Patterns in React](patterns-in-react.md)
+- [Module vs Revealing Module](module-vs-revealing-module.md)
+- [Observer vs PubSub vs Mediator](observer-vs-pub-sub-vs-mediator.md)
+- [MVC vs MVP vs MVVM](mvc-vs-mvp-vs-mvvm.md)
+- [Builder vs Abstract Factory vs Factory Method](builder-vs-abstract-factory-vs-factory-method.md)

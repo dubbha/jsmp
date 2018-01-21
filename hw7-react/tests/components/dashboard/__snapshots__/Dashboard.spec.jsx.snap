@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard should render dashboard 1`] = `
+<div
+  className="dashboard"
+>
+  <Route
+    component={[Function]}
+    exact={true}
+    path="test_url"
+  />
+</div>
+`;

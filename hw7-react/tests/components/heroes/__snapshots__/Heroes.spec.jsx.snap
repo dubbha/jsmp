@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heroes should render heroes list 1`] = `
+<div
+  className="heroes"
+>
+  <h2>
+    My Heroes
+  </h2>
+  <ul
+    className="heroes"
+  >
+    <HeroesHero
+      className=""
+      hero={
+        Object {
+          "id": 3,
+          "name": "Optimus Drie",
+        }
+      }
+      setSelectedHero={[Function]}
+    />
+    <HeroesHero
+      className=""
+      hero={
+        Object {
+          "id": 4,
+          "name": "Optimus Fier",
+        }
+      }
+      setSelectedHero={[Function]}
+    />
+    <HeroesHero
+      className=""
+      hero={
+        Object {
+          "id": 5,
+          "name": "Optimus Funf",
+        }
+      }
+      setSelectedHero={[Function]}
+    />
+  </ul>
+</div>
+`;

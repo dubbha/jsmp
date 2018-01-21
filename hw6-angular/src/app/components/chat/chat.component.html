@@ -1,0 +1,19 @@
+<div class="chat__container">
+  <div class="chat__auth">
+      <span *ngIf="response" class="chat__response">{{response}}</span>
+      <span *ngIf="username">
+        <span class="chat__username"><a routerLink="/cabinet">[{{username}}]</a></span>
+        <button class="chat__button" (click)="logout()">Log Out</button>
+      </span>
+  </div>
+  <form (ngSubmit)="say()" class="chat__form">
+    <a routerLink="/chat"><img src="assets/angie-chat.svg" alt="" /></a>
+    <input class="chat__input" type="text" autoComplete="off"
+      name="message"
+      [(ngModel)]="message" />
+    <button class="chat__button" type="submit">Say</button>
+  </form>
+  <div>
+      <div *ngFor="let msg of chat" class="chat__message">{{msg}}</div>
+  </div>
+</div>

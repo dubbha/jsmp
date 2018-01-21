@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroesSelectedHero should render selected hero 1`] = `
+<div
+  className="selectedHero"
+>
+  <h2
+    className="selectedHero__header"
+  >
+    <span
+      className="uppercase"
+    >
+      Zero
+    </span>
+     is my hero
+  </h2>
+  <Link
+    className="selectedHero__link"
+    replace={false}
+    to="/hero-details/777"
+  >
+    View Details
+  </Link>
+</div>
+`;

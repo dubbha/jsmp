@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroDetails should render dashboard top hero element 1`] = `
+<div
+  className="hero-details"
+>
+  <h2>
+    Primus
+     details!
+  </h2>
+  <div>
+    <label>
+      id: 
+    </label>
+    1
+  </div>
+  <div>
+    <label>
+      name: 
+    </label>
+    <input
+      onChange={[Function]}
+      placeholder="name"
+      value="Primus"
+    />
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    Back
+  </button>
+</div>
+`;

@@ -1,0 +1,42 @@
+<header class="header">
+  <a routerLink="/chat"><img src="assets/angie-chat.svg" alt="" /></a>
+  <nav class="nav">
+    <a routerLink="/chat" routerLinkActive="active">Chat</a>
+    <a routerLink="/login" routerLinkActive="active">Login</a>
+    <a routerLink="/register" routerLinkActive="active">Register</a>
+  </nav>
+</header>
+<div>
+  <div>
+    <form class="register__form" (submit)="submit()" autoComplete="off">
+      <div class="register__block"> Username:
+        <input
+          class="register__input"
+          type="text"
+          name="username"
+          [(ngModel)]="username" />
+      </div>
+      <div class="register__block"> Password:
+        <input
+          class="register__input"
+          type="password"
+          name="password"
+          [(ngModel)]="password" />
+      </div>
+      <div class="register__block"> Confirm Password:
+        <input
+          class="register__input"
+          type="password"
+          name="password2"
+          [(ngModel)]="password2" />
+      </div>
+      <button
+        type="submit"
+        id="equal"
+        class="register__button .register__button-submit"> Register </button>
+    </form>
+    <a routerLink="/login" class="register__link">
+      Already registered? Log in!
+    </a>
+  </div>
+</div>

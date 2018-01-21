@@ -1,0 +1,85 @@
+h1
+  font: 24px/26px Arial
+
+.chat
+  &__container
+    width: 80%
+    background-color: white
+    margin: 0 auto
+    @media (max-width: 1200px)
+        width: 100%
+  &__auth
+    float: right
+    font: 12px Arial
+  &__input
+    width: 60%
+    height: 24px
+    border: 1px solid black
+    box-sizing: border-box
+    font: 12px Arial
+    @media (max-width: 1000px)
+      width: 40%
+    @media (max-width: 600px)
+      width: calc(100% - 102px)
+  &__button
+    width: 100px
+    height: 24px
+    background-color: #FF7043
+    border: 1px solid black
+    margin: 1px
+    font: 12px Arial
+    text-transform: uppercase
+    box-sizing: border-box
+  &__username
+    margin: 1px
+    font-weight: bold
+  &__response
+  &__message
+    font: 12px Arial
+
+
+.login
+  &__form
+  &__block
+    font: 12px Arial
+    color: #DDD
+    text-transform: uppercase
+    vertical-align: middle
+    position: relative
+    width: 320px
+    height: 30px
+    line-height: 30px
+    background-color: gray
+    padding: 3px
+    border: none
+    box-sizing: border-box
+  &__input
+    width: 160px
+    height: 24px
+    float: right
+    border: 1px solid black
+    box-sizing: border-box
+  &__button
+    font: 12px Arial
+    color: black
+    width: 320px
+    background-color: #FF7043
+    text-transform: uppercase
+    border: 1px solid black
+    height: 24px
+    text-align: center
+    box-sizing: border-box
+  &__link
+    font: 12px Arial
+    color: gray
+    margin-top: 15px
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+.cabinet
+  &__button
+    &:focus
+      outline: 0
+    &_active
+      border: 1px solid  red

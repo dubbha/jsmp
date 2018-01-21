@@ -1,0 +1,9 @@
+<header class="header">
+  <a routerLink="/"><img src="assets/angie-chat.svg" alt="" /></a>
+  <nav class="nav">
+    <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Cabinet</a>
+    <a routerLink="./info/{{username}}" routerLinkActive="active">Info</a>
+    <a routerLink="./friends" routerLinkActive="active">Friends</a>
+  </nav>
+</header>
+<router-outlet></router-outlet>

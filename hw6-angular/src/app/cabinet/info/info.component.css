@@ -1,0 +1,49 @@
+.login__block {
+    font: 12px Arial;
+    color: #DDD;
+    text-transform: uppercase;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 455px;
+    height: 30px;
+    line-height: 30px;
+    background-color: gray;
+    padding: 3px;
+    border: none;
+    box-sizing: border-box;
+}
+   
+.login__input {
+    width: 66%;
+    height: 24px;
+    float: right;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.login__button {
+    font: 12px Arial;
+    color: black;
+    width: 100%;
+    min-width: 320px;
+    max-width: 455px;
+    background-color: #FF6600;
+    text-transform: uppercase;
+    border: 1px solid black;
+    height: 24px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login__link {
+    font: 12px Arial;
+    color: gray;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.login__link:hover {
+    text-decoration: underline
+}

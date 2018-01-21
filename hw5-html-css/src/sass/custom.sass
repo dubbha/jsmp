@@ -1,0 +1,331 @@
+// Bootstrap customizations
+// We may use Bootstrap variables since we included the SASS source file before
+
+// Override Bootstrap variables
+$enable-rounded: false       // disable predefined border-radius styles on various components
+$enable-print-styles: false  // disable styles for printing optimizing
+
+// Adding more color variable
+$lime: #8EBA43
+
+// Override Bootsrap styles
+.navbar
+
+  &-brand
+    width: 130px
+    font-family: $font-family-sans-serif // using bootstrap variables
+    font-size: $font-size-lg
+    font-weight: $font-weight-bold
+
+    &__icon
+      width: 40px
+      height: 40px
+      fill: currentColor
+
+  &-link
+    width: 40px
+    padding-top: .25rem
+
+    &__icon
+      width: 40px
+      height: 40px
+      transition: 0.6s
+
+.table
+  thead > tr > th
+    border-bottom: none
+
+  td, th
+    padding: auto
+    border: none
+
+// Tag level styles
+html, body
+  height: 100%
+
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+// ID level styles
+#app, #app > div, #main
+  height: 100%
+
+
+// Custom BEM-based classes
+.navbar
+  height: 10vh
+  padding: 0 3vw
+  align-items: center
+
+.calendar
+  &-table             // block-block
+    height: 90vh
+    margin: 0
+    table-layout: fixed
+
+    thead
+      height: 10%
+  
+    tbody
+      height: 90%
+
+      tr
+        height: 20%
+
+  
+  &__date             // block__element
+    overflow: hidden
+    white-space: nowrap
+    font-weight: bold
+
+    &_other-month     // block__element_modifier-name
+      opacity: 0.6
+      font-weight: normal
+
+    &_today
+      border-style: solid !important
+
+.day                  
+  &__number                  // block__element
+    width: 30px
+    height: 30px
+
+    &_today                  // block-block__element_modifier
+      border-radius: 50%
+      border-width: 2px
+      border-style: solid
+      text-align: center
+      display: inline-block
+
+.month-name 
+  &_current
+  &_next
+  &_view
+    &_days_7,
+    &_days_3,
+      display: none
+
+    &_days_1
+      display: inline
+
+// Default theme
+.theme-default
+  .navbar
+    background-color: $gray-lightest
+
+    &-brand
+      color: $lime
+
+    &-link
+      &__icon
+        fill: $lime
+
+  .table-striped
+    thead th
+      background-color: $lime
+      color: $gray-lightest
+
+    tbody tr
+      background-color: white
+
+      @include media-breakpoint-up(sm)
+        & td:hover
+          background-color: $gray-lightest
+      
+      @include media-breakpoint-up(md)
+        &:nth-of-type(odd)
+          background-color: white
+
+          & :hover
+            background-color: $gray-lightest
+
+        &:nth-of-type(even)
+          background-color: $gray-lightest
+
+          & :hover
+            background-color: $gray-lighter
+
+  .calendar__date
+    color: $lime
+
+    &_today
+      border-color: $lime !important
+
+  .day-number_today
+    border-color: $lime
+
+// Night Theme
+.theme-night
+  .navbar
+    background-color: $gray
+
+    &-brand
+      color: $orange
+
+    &-link
+      &__icon
+        fill: $orange
+        transform: scaleX(-1)
+  
+  .table-striped
+    thead th
+      background-color: $orange
+      color: $gray
+
+    tbody tr
+      background-color: black
+
+      @include media-breakpoint-up(sm)
+        & td:hover
+          background-color: $gray-light
+      
+      @include media-breakpoint-up(md)  
+        &:nth-of-type(odd)
+          background-color: black
+
+          & :hover
+            background-color: $gray
+
+        &:nth-of-type(even)
+          background-color: $gray
+
+          & :hover
+            background-color: $gray-light
+
+  .calendar__date
+    color: $orange
+
+    &_today
+      border-color: $orange
+  
+  .day-number_today
+    border-color: $orange;
+
+
+// Bootstrap mixins for media queries
+@media screen
+  // Mobile first
+  .calendar-table tr th:nth-child(1),
+  .calendar-table tr th:nth-child(2),
+  .calendar-table tr th:nth-child(4),
+  .calendar-table tr th:nth-child(5),
+  .calendar-table tr th:nth-child(6),
+  .calendar-table tr th:nth-child(7),
+  .calendar-table tr td:nth-child(1),
+  .calendar-table tr td:nth-child(2),
+  .calendar-table tr td:nth-child(4),
+  .calendar-table tr td:nth-child(5),
+  .calendar-table tr td:nth-child(6),
+  .calendar-table tr td:nth-child(7),
+    display: none
+
+  .calendar__date_today
+    border-width: 1px !important
+  
+  .week
+    display: none
+
+    &_current
+      display: table-row
+
+  @include media-breakpoint-up(sm)
+    .calendar-table tr th:nth-child(2),
+    .calendar-table tr th:nth-child(4),
+    .calendar-table tr td:nth-child(2),
+    .calendar-table tr td:nth-child(4)
+      display: table-cell
+    
+    .month-name_view_days_3
+      display: inline
+    
+    .month-name_view_days_7,
+    .month-name_view_days_1
+      display: none
+
+    .calendar__date_today
+      border-width: 1px !important
+
+  @include media-breakpoint-up(md) 
+    .calendar-table tr th:nth-child(1),
+    .calendar-table tr th:nth-child(5),
+    .calendar-table tr th:nth-child(6),
+    .calendar-table tr th:nth-child(7),
+    .calendar-table tr td:nth-child(1),
+    .calendar-table tr td:nth-child(5),
+    .calendar-table tr td:nth-child(6),
+    .calendar-table tr td:nth-child(7)
+      display: table-cell
+
+    .month-name_view_days_1,
+    .month-name_view_days_3
+      display: none
+
+    .month-name_view_days_7
+      display: inline
+
+    .calendar__date_today
+      border-width: 3px !important
+
+    .week
+      display: table-row
+
+// Print version
+@media print
+  *,
+  *:before,
+  *:after
+    background: transparent !important
+    color: #000 !important
+    box-shadow: none !important
+    text-shadow: none !important
+
+  body
+     margin: 0
+  
+  table
+    border-collapse: collapse;
+
+  td
+    border: 1pt solid black !important
+    font-family: $font-family-serif
+    font-size: $font-size-xs
+    font-weight: $font-weight-normal
+
+  .navbar
+    background-color: white !important
+
+    &-brand
+      color: #999 !important
+
+      &__icon
+        fill: #999 !important
+
+    &-link
+      &__icon
+        display: none !important
+
+  .table-striped tbody
+    background-color: white !important
+
+  .calendar-table__date
+    color: #000 !important
+
+  .calendar__date_today
+    border: 3px solid #000 !important
+    border-color: #000 !important
+
+  .day__number
+    font-family: $font-family-sans-serif
+    font-size: $font-size-sm
+
+    &_today
+      border: 2px solid #999 !important
+  
+  .month-name_view_days_1,
+  .month-name_view_days_3
+    display: none
+
+  .month-name_view_days_7
+    display: inline
