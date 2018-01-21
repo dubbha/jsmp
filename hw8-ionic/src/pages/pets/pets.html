@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'Pets Feeding Time' }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let pet of pets">
+    <ion-label><ion-icon name="paw"></ion-icon> {{pet.name}}</ion-label>
+    <ion-datetime
+      displayFormat="HH:mm"
+      pickerFormat="HH mm"
+      [(ngModel)]="pet.time"
+      (ionChange)="timeChange($event, pet.name, pet.id)"
+    ></ion-datetime>
+  </ion-item>
+</ion-content>

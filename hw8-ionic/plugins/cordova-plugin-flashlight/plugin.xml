@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+    <plugin id="cordova-plugin-flashlight" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>flashlight</name>
+    <js-module name="flashlight" src="www/flashlight.js">
+        <clobbers target="window.plugins.flashlight" />
+    </js-module>
+    <description>flashlight plugin</description>
+    <author>Alex Dubovyk</author>
+    <license>MIT</license>
+    <repo>https://github.com/dubbha/cordova-plugin-flashlight.git</repo>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="Flashlight">
+            <param name="android-package" value="nl.xservices.plugins.Flashlight" />
+        </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+        <uses-permission android:name="android.permission.CAMERA"/>
+        </config-file>
+        <source-file src="src/android/nl/xservices/plugins/Flashlight.java" target-dir="src/nl/xservices/plugins"/>
+        <dependency id="cordova-plugin-compat" version="^1.0.0" />
+    </platform>
+</plugin>

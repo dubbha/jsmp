@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ pageTitle }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <form [formGroup]="form" *ngIf="settingsReady">
+    <ion-list *ngIf="page == 'main'">
+      <ion-item>
+        <ion-label>Enable Notifications</ion-label>
+        <ion-toggle formControlName="notificationsEnabled"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Notification Sound</ion-label>
+        <ion-select formControlName="notificationsSound">
+          <ion-option value="kiss_from_a_rose">Kiss From A Rose</ion-option>
+          <ion-option value="marigold">Marigold</ion-option>
+          <ion-option value="push_the_little_daisies">Push The Little Daisies</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </form>
+
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'Flowers Watering Time' }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let flower of flowers">
+    <ion-label><ion-icon name="flower" [color]="buttonColor"></ion-icon> {{flower.name}}</ion-label>
+    <ion-datetime
+      displayFormat="HH:mm"
+      pickerFormat="HH mm"
+      [(ngModel)]="flower.time"
+      (ionChange)="timeChange($event, flower.name, flower.id)"
+    ></ion-datetime>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <button ion-button full [color]="buttonColor" (click)="photosynthesis()">Photosynthesis</button>
+</ion-footer>

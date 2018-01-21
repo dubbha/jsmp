@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "D:\\git\\js_mentoring_program\\hw8-ionic\\src\\plugins\\flashlight",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "D:\\git\\js_mentoring_program\\hw8-ionic\\src\\plugins\\flashlight",
+        "spec": "D:\\git\\js_mentoring_program\\hw8-ionic\\src\\plugins\\flashlight",
+        "type": "directory"
+      },
+      "D:\\git\\js_mentoring_program\\hw8-ionic\\node_modules"
+    ]
+  ],
+  "_from": "src\\plugins\\flashlight",
+  "_id": "flashlight@1.0.0",
+  "_inCache": true,
+  "_location": "/flashlight",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "D:\\git\\js_mentoring_program\\hw8-ionic\\src\\plugins\\flashlight",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "D:\\git\\js_mentoring_program\\hw8-ionic\\src\\plugins\\flashlight",
+    "spec": "D:\\git\\js_mentoring_program\\hw8-ionic\\src\\plugins\\flashlight",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:src\\plugins\\flashlight",
+  "_shasum": "72290198bf36aa2bec83f49064ad25c9767e3348",
+  "_shrinkwrap": null,
+  "_spec": "D:\\git\\js_mentoring_program\\hw8-ionic\\src\\plugins\\flashlight",
+  "_where": "D:\\git\\js_mentoring_program\\hw8-ionic\\node_modules",
+  "author": {
+    "name": "Alex Dubovyk"
+  },
+  "bugs": {
+    "url": "https://github.com/dubbha/cordova-plugin-flashlight/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-flashlight",
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "description": "flashlight plugin",
+  "devDependencies": {},
+  "homepage": "https://github.com/dubbha/cordova-plugin-flashlight#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "flashlight",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dubbha/cordova-plugin-flashlight.git"
+  },
+  "version": "1.0.0"
+}

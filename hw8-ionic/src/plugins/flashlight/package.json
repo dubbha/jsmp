@@ -1,0 +1,25 @@
+{
+  "name": "flashlight",
+  "version": "1.0.0",
+  "description": "flashlight plugin",
+  "cordova": {
+    "id": "cordova-plugin-flashlight",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dubbha/cordova-plugin-flashlight.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Alex Dubovyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dubbha/cordova-plugin-flashlight/issues"
+  },
+  "homepage": "https://github.com/dubbha/cordova-plugin-flashlight#readme"
+}
